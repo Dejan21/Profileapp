@@ -18,6 +18,7 @@ function App() {
 
         
         <Route exact path='/' component={FirstCard} />
+        <Route exact path='/FirstCard' component={FirstCard} />
         <Route path ='/SecondCard' component={SecondCard}/>
         
         
