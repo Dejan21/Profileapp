@@ -7,6 +7,7 @@ import {Container, Row, Col} from 'react-bootstrap';
 import CardsContainer from './components/CardsContainer';
 import SecondCard from './components/SecondCard';
 
+
 function App() {
   return (
     <Container className="App text-center ">
@@ -15,11 +16,10 @@ function App() {
       <Router>
         <Switch>
 
-         {/* <FirstCard  />
-        <CardsContainer /> */}
-        <Route exact path='/FirstCard' component={FirstCard} />
+        
+        <Route exact path='/' component={FirstCard} />
         <Route path ='/SecondCard' component={SecondCard}/>
-        {/* <SecondCard /> */}
+        
         
         </Switch>
 

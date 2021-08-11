@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import {Button} from 'react-bootstrap';
-import { NavLink as link  } from 'react-router-dom';
 
 
 
@@ -13,9 +12,6 @@ class FirstCard extends Component {
     post: [],
   };
 
-//   handleSubmit = (e) => {
-//     e.preventDefault();
-// }
 
 
   render() {
@@ -37,8 +33,7 @@ class FirstCard extends Component {
           </NavLink> */}
           {/* </Button> */}
           <Link to="/SecondCard">SecondCard</Link>
-           
-          {/* <Link to="SecondCard">SecondCard</Link> */}
+          
         </Card.Body>
       </Card>   
     );
