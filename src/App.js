@@ -1,9 +1,9 @@
 
 import './App.css';
-import React, { Component } from "react";
+import React  from "react";
 import MyProfileCard from './components/MyProfileCard';
 import {BrowserRouter as Router, Redirect, Switch, Route } from 'react-router-dom';
-import {Container, Row, Col} from 'react-bootstrap';
+import {Col, Container, Row} from 'react-bootstrap';
 import EditMyProfileCard from './components/EditMyProfileCard';
 
 
