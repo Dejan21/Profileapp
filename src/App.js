@@ -1,7 +1,6 @@
-import logo from './logo.svg';
+
 import './App.css';
 import React, { Component } from "react";
-import FirstCard from './components/MyProfileCard';
 import MyProfileCard from './components/MyProfileCard';
 import {BrowserRouter as Router, Redirect, Switch, Route } from 'react-router-dom';
 import {Container, Row, Col} from 'react-bootstrap';
