@@ -1,11 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
 import React, { Component } from "react";
-import FirstCard from './components/FirstCard';
-import {BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import FirstCard from './components/MyProfileCard';
+import MyProfileCard from './components/MyProfileCard';
+import {BrowserRouter as Router, Redirect, Switch, Route } from 'react-router-dom';
 import {Container, Row, Col} from 'react-bootstrap';
-import CardsContainer from './components/CardsContainer';
-import SecondCard from './components/SecondCard';
+import EditMyProfileCard from './components/EditMyProfileCard';
 
 
 function App() {
@@ -17,10 +17,10 @@ function App() {
         <Switch>
 
         
-        <Route exact path='/' component={FirstCard} />
-        <Route exact path='/FirstCard' component={FirstCard} />
-        <Route path ='/SecondCard' component={SecondCard}/>
         
+        <Route exact path='/my-profile' component={MyProfileCard} />
+        <Route path ='/edit-my-profile' component={EditMyProfileCard}/>
+        <Redirect to={"/my-profile"}/>
         
         </Switch>
 
