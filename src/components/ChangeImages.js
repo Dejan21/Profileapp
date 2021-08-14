@@ -6,9 +6,9 @@ class ChangeImages extends Component {
 
   };
 
-  handleChangeImg = (e) => {
+  changeImg = (e) => {
       this.setState({
-          img: this.state.img
+          img: e.target.value
       })
   }
 
@@ -16,7 +16,7 @@ class ChangeImages extends Component {
         const{ img} = this.state;
         return (
             <div className="ChangeImages">
-                <img src={require(`../assets/${img}`).default}  value={img} />
+                <img src={require(`../assets/${img}`).default}  value={img} onChange={this.changeImg} />
             </div>
         );
     }

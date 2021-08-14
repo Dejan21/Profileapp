@@ -7,7 +7,7 @@ function MyProfileCard(props) {
     return (
         <Card className="flex-center">
             <Link to="/edit-my-profile"> <i className="bi bi-arrow-clockwise spinner-button"/> </Link>
-            <Card.Img variant='top' src={require("../assets/img.jpg").default} 
+            <Card.Img variant='top' src={require("../assets/img1.jpg").default} 
                       />
             <Card.Body>
                 <Card.Text>First Name</Card.Text>

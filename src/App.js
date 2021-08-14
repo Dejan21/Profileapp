@@ -5,6 +5,7 @@ import MyProfileCard from './components/MyProfileCard';
 import {BrowserRouter as Router, Redirect, Switch, Route } from 'react-router-dom';
 import {Col, Container, Row} from 'react-bootstrap';
 import EditMyProfileCard from './components/EditMyProfileCard';
+import ChangeImages from './components/ChangeImages';
 
 
 function App() {
@@ -16,7 +17,7 @@ function App() {
         <Switch>
 
         
-        
+        <Route ecact path ='/change-images' component={ChangeImages}/>
         <Route exact path='/my-profile' component={MyProfileCard} />
         <Route path ='/edit-my-profile' component={EditMyProfileCard}/>
         <Redirect to={"/my-profile"}/>
